@@ -5,9 +5,8 @@ isleap="false"
 read -p "Enter year: " year
 
 if [ $((year % 4)) -ne 0 ] ; then
-   : #  not a leap year : means do nothing and use old value of isleap
+    echo "it is not leap year"
 elif [ $((year % 400)) -eq 0 ] ; then
-   # yes, it's a leap year
    isleap="true"
 else
    # it is a leap year
