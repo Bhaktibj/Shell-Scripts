@@ -1,5 +1,5 @@
-# read input from user and perform basic aithmatic operations using switch case
 #!/bin/bash -x
+# read input from user and perform basic aithmatic operations using switch case
 read -p "Enter first number: " a
 read -p "Enter second number: " b
 echo "Enter the choice: "

@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # take input from user and find the number of fact
 read -p "Enter the number: " num
 fact=1

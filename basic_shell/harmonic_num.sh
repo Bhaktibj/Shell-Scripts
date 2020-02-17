@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # prints the nth harmonic number
 read -p "Enter the number: " num
 res=0.0

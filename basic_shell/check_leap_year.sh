@@ -1,5 +1,5 @@
+#!/bin/bash -x
 # check given year is leap or not
-#!/bin/bash
 
 isleap="false"
 read -p "Enter year: " year

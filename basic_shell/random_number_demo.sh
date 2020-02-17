@@ -1,5 +1,5 @@
-# print single digit random number
 #!/bin/bash
+# print single digit random number
 echo "display random numbers:" $(($RANDOM % 20))
 echo $RANDOM
 

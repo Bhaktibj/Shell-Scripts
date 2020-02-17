@@ -1,3 +1,4 @@
+#!/bin/bash -x
 tail=0
 head=0
 count=1

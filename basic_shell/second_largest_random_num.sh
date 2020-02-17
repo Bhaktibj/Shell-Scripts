@@ -1,3 +1,4 @@
+#!/bin/bash -x
 count=0
 first_max=0
 second_max=0

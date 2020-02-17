@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 read -p "Enter the x value:" x
 read -p "Enter the y value:" y
 var=$(( $x * $x  + $y * $y ))

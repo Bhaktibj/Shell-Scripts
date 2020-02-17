@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # find prime factors and store in array
 read -p "enter the input :" num
 count=0

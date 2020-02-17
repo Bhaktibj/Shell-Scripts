@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # take 3 input from user and check percendence of operator 
 echo "Enter the first number"
 read num1

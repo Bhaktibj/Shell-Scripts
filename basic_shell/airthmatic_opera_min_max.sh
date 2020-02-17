@@ -1,3 +1,4 @@
+#!/bin/bash - x
 # perform airthmatic operations and find min and max result
 echo "Enter the first number"
 read num1

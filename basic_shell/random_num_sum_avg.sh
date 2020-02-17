@@ -1,3 +1,4 @@
+#!/bin/bash -x
 count=0
 sum=0
 for i in {1..5};

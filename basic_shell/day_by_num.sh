@@ -1,3 +1,4 @@
+#!/bin/bash
 # take the input number from user and print day
 read -p "Enter the number between 0 to 6: " input
 if [ $input == 0 ]; then

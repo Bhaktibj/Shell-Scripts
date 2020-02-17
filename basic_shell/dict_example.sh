@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # dictionary  opeartions like add key value pair, delete 
 echo "List of the dict operations: "
 echo "1. Declare dictionary"

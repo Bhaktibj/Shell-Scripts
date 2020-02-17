@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # find prime factors using while and for loop
 read -p "enter the input :" num
 for((i=2;i<=num;i++)); do

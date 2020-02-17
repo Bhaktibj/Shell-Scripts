@@ -1,5 +1,5 @@
-# basic airthmatic operations
 #!/bin/bash -x
+# basic airthmatic operations
 x=200;
 y=100;
 z=$(( $x + $y ))

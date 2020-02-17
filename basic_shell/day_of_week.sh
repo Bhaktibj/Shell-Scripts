@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # read day, month , year input from user and print day of the week using if and elif
 read -p "Enter the day: " day
 read -p "Enter the month: " month

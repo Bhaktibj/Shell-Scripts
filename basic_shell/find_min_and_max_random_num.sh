@@ -1,3 +1,4 @@
+#!/bin/bash
 #Generate 5 randoms 5 digit and print min and max
 count=0
 max=0

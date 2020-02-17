@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # take input from user and find 2^n
 read -p "Enter the number: " num
 pow=1

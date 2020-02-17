@@ -1,3 +1,4 @@
+#!/bin/bash -x
 function check_prime()
 {  
    count=0

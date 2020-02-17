@@ -1,3 +1,4 @@
+#!/bin/bash -x
 #sum of integers
 read -p "enter the first number: " num1
 read -p "enter the second number: " num2

@@ -1,3 +1,4 @@
+#!/bin/bash -x
 echo "Enter the value"
 read value
 echo "conversion is feet"

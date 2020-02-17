@@ -1,3 +1,4 @@
+#!/bin/bash
 # temperature conversion  using funtion and switch cases
 read -p "Enter the temperature  "  temp
 function  temp_con_cel()

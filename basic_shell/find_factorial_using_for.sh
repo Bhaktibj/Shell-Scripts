@@ -1,3 +1,4 @@
+#!/bin/bash -x
 # find factorial using for loop
 read -p "Enter a number: " num
 fact=1
