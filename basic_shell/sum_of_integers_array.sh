@@ -11,6 +11,6 @@ numbers[ (( count++ )) ]=$num2
 numbers[ (( count++ )) ]=$num3
 echo "numbers " ${numbers[@]}
 for num in ${numbers[@]}; do
-    sum=`echo "scale=2; $sum + $num" | bc`
+   sum=`echo "scale=2; $sum + $num" | bc`
 done
 echo "sum of integers is: " $sum

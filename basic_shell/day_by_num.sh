@@ -2,20 +2,20 @@
 # take the input number from user and print day
 read -p "Enter the number between 0 to 6: " input
 if [ $input == 0 ]; then
-  echo "Sunday"
+   echo "Sunday"
 elif [ $input == 1  ]; then
-  echo "Monday"
+   echo "Monday"
 elif [ $input == 2 ]; then  
-  echo "Tuesday" 
+   echo "Tuesday" 
 elif [ $input == 3 ]; then  
-  echo "Wednsday" 
+   echo "Wednsday" 
 elif [ $input == 4 ]; then  
-  echo "Thursday" 
+   echo "Thursday" 
 elif [ $input == 5 ]; then  
-  echo "Friday" 
+   echo "Friday" 
 elif [ $input == 6 ]; then  
-  echo "Saturday"
+   echo "Saturday"
 else 
-  echo "Invalid number" 
+   echo "Invalid number" 
 fi
 
