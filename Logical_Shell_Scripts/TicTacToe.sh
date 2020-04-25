@@ -1,3 +1,4 @@
+#!/bin/bash -x
 echo "Welcome to Tic tac toe Game"
 declare -a board # initalize board array
 #constants
