@@ -91,6 +91,71 @@ function randomCheck(){    # this function is used to check random input
 }
 
 
+function checkHorizontalCase(){   # This method is used to check horizontal case
+
+	numberOfRows=3  # number of rows is 3
+	position=1  # position = 1
+	counter=1  # counter = 1
+	while [ $counter -le 3 ]  # check coutnter is until less than or equal to 3
+	do
+		if [[ ${board[$position]} == ${board[$position+1]} ]] && [[ ${board[$position+1]} == ${board[$position+2]} ]] && [[ ${board[$position+2]} == $1 ]]
+		then
+			printBoard
+			echo "$1 wins"   # print boards
+			winner=true  # winner equal to true
+			break  # break
+		else
+			position=$(( $position+$numberOfRows ))   # position equal to postion + number of rows
+		fi   # close if
+	counter=$(( $counter+1 ))   # counter = counter increament by 1
+	done
+}
+
+function checkVerticalCase(){   #  This method is used to check the vertical case
+	numberOfRows=3  # number of rows
+	position=1  # postion is 1
+	counter=1  # counter started by 1
+	while [ $counter -le 3 ]  # while loop -- counter is less than or equal to 3
+	do
+	  # check board of position is equal to board of postion 3 and so on
+		if [[ ${board[$position]} == ${board[$position+3]} ]] && [[ ${board[$position+3]}  ==  ${board[$position+6]} ]] && [[ ${board[$position+6]} == $1 ]]
+		then
+			printBoard
+			echo "$1 Wins"  # print board
+			winner=true # and winner equal to true
+			break  # break
+		else   # else
+			position=$(( $position+1 ))  # else position assign position increament by 1
+		fi   # close if loop
+	counter=$(( $counter+1 ))  # assign counter
+	done
+}
+
+function checkDiagonalCase()  # This method is used to check diagnol case
+{
+	position=1 # position is assign 1
+	counter=1  # counter is assign 1
+	while [ $counter -le 2 ]  # check in while counter is less than or equal to 2
+	do
+	  # check  if board of position is equal to board of position 4 and position 4 is equal to position 8 so on..
+		if [[ ${board[$position]} == ${board[$position+4]} ]] && [[ ${board[$position+4]}  ==  ${board[$position+8]} ]] && [[ ${board[$position+8]} == $1 ]]
+		then # then
+			printBoard
+			echo " $1 wins "  # print wins
+			winner=true # winner = true
+			break  # break
+			# else if check board of position increament by 2 is equal to position increament by 4
+		elif [[ ${board[$position+2]} == ${board[$position+4]} ]] && [[  ${board[$position+4]}  ==  ${board[$position+6]} ]] && [[ ${board[$position+6]} == $1 ]]
+		then  #  print  Board
+			printBoard
+			echo " $1 wins "
+			winner=true
+			break
+		fi
+		counter=$(($counter+1))
+	done
+}
+
 function checkTieCase(){  # this method is used check the game is tie
 
 	while [ ${board[$nonEmptyCount]} != 0 ] # check while board of non empty count is not equal to 0
